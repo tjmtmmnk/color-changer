@@ -25,7 +25,9 @@
     "default_title": "color-changer"
   },
   "background": {
-    "scripts": ["js/background.js"],
+    "scripts": [
+      "js/background.js"
+    ],
     "persistent": false
   },
   "content_scripts": [
@@ -42,17 +44,11 @@
     "js/content-script.js"
   ],
   "commands": {
-    "red" : {
+    "_execute_browser_action": {
       "suggested_key": {
-        "default": "Alt+R"
-      },
-      "description": "Change to red"
-    },
-    "blue": {
-      "suggested_key": {
-        "default": "Alt+B"
-      },
-      "description": "Change to blue"
+        "windows": "Ctrl+Shift+O",
+        "mac": "Command+Shift+O"
+      }
     }
   }
 }
